@@ -20,6 +20,7 @@ public class WallGenerator {
        brickHeight=540 / col;
        brickHeight=150 / row;
     }
+    
     public void draw(Graphics2D g) {
         for (int i = 0; i < wall.length; i++) {
             for (int j = 0; j < wall[0].length; j++) {
@@ -36,24 +37,31 @@ public class WallGenerator {
     }
     
     public void setBrickValue(int value, int row, int col) {
-        getWall()[row][col] = value;
+        wall[row][col] = value;
     }
+    
     public int[][] getWall() {
         return wall;
     }
+    
     public void setWall(int wall[][]) {
         this.wall = wall;
     }
+    
     public int getBrickWidth() {
         return brickWidth;
     }
+    
     public void setBrickWidth(int brickWidth) {
         this.brickWidth = brickWidth;
     }
+    
     public int getBrickHeight() {
         return brickHeight;
     }
+    
     public void setBrickHeight(int brickHeight) {
         this.brickHeight = brickHeight;
     }
+    
 }
