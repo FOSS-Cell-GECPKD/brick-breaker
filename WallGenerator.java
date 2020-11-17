@@ -5,33 +5,36 @@ import java.awt.Color;
 import java.awt.Graphics2D;
 
 public class WallGenerator {
+	
     private int wall[][];
     private int brickWidth;
     private int brickHeight;
+    
     public WallGenerator(int row, int col) {
-        setWall(new int[row][col]);
-        for (int i = 0; i < getWall().length; i++) {
-            for (int j = 0; j < getWall()[0].length; j++) {
-                getWall()[i][j] = 1;
+        wall=new int[row][col];
+        for (int i = 0; i < wall.length; i++) {
+            for (int j = 0; j < wall[0].length; j++) {
+                wall[i][j] = 1;
             }
         }
-        setBrickWidth(540 / col);
-        setBrickHeight(150 / row);
+       brickHeight=540 / col;
+       brickHeight=150 / row;
     }
     public void draw(Graphics2D g) {
-        for (int i = 0; i < getWall().length; i++) {
-            for (int j = 0; j < getWall()[0].length; j++) {
-                if (getWall()[i][j] > 0) {
+        for (int i = 0; i < wall.length; i++) {
+            for (int j = 0; j < wall[0].length; j++) {
+                if (wall[i][j] > 0) {
                     g.setColor(Color.white);
-                    g.fillRect(j * getBrickWidth() + 80, i * getBrickHeight() + 40, getBrickWidth(), getBrickHeight());
+                    g.fillRect(j * brickWidth + 80, i * brickHeight + 40, brickWidth, brickHeight);
 
                     g.setStroke(new BasicStroke(3));
                     g.setColor(Color.black);
-                    g.drawRect(j * getBrickWidth() + 80, i * getBrickHeight() + 40, getBrickWidth(), getBrickHeight());
+                    g.drawRect(j * brickWidth + 80, i * brickHeight + 40, brickWidth, brickHeight);
                 }
             }
         }
     }
+    
     public void setBrickValue(int value, int row, int col) {
         getWall()[row][col] = value;
     }
