@@ -1,4 +1,4 @@
-﻿package brickBreaker;
+﻿package brickBraker;
 
 import java.awt.Color;
 import java.awt.Font;
@@ -17,7 +17,7 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener {
     private boolean play = false;
     private int score = 0;
 
-    private int totalBricks = 40;
+    private int totalBricks = 21;
 
     private Timer timer;
     private int delay = 8;
@@ -29,11 +29,11 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener {
     private int ballXdir = -1;
     private int ballYdir = -2;
 
-    private WallGenerator map;
+    private MapGenerator map;
 
 
     public Gameplay() {
-        map = new WallGenerator(5, 8);
+        map = new MapGenerator(5, 8);
         addKeyListener(this);
         setFocusable(true);
         setFocusTraversalKeysEnabled(false);
@@ -68,7 +68,7 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener {
         g.setColor(Color.yellow);
         g.fillOval(ballposX, ballposY, 20, 20);
 
-        if (play == false && totalBricks == 40) {
+        if (play == false && totalBricks == 21) {
             //game start message
             g.setColor(Color.white);
             g.setFont(new Font("serif", Font.PLAIN, 20));
@@ -88,7 +88,7 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener {
             g.fillRect(80, 40, 540, 150);
         }
 
-        if (totalBricks <= 0) {
+        if (totalBricks == 0) {
             play = false;
             ballXdir = 0;
             ballYdir = 0;
@@ -125,13 +125,13 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener {
                 ballYdir = -ballYdir;
             }
             A:
-                for (int i = 0; i < map.getWall().length; i++) {
-                    for (int j = 0; j < map.getWall()[0].length; j++) {
-                        if (map.getWall()[i][j] > 0) {
-                            int brickX = j * map.getBrickWidth() + 80;
-                            int brickY = i * map.getBrickHeight() + 50;
-                            int brickWidth = map.getBrickWidth();
-                            int brickHeight = map.getBrickHeight();
+                for (int i = 0; i < map.map.length; i++) {
+                    for (int j = 0; j < map.map[0].length; j++) {
+                        if (map.map[i][j] > 0) {
+                            int brickX = j * map.brickWidth + 80;
+                            int brickY = i * map.brickHeight + 50;
+                            int brickWidth = map.brickWidth;
+                            int brickHeight = map.brickHeight;
 
                             Rectangle rect = new Rectangle(brickX, brickY, brickWidth, brickHeight);
                             Rectangle ballRect = new Rectangle(ballposX, ballposY, 20, 20);
@@ -162,7 +162,6 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener {
             if (ballposY < 0) {
                 ballYdir = -ballYdir;
             }
-
             if (ballposX > 670) {
                 ballXdir = -ballXdir;
             }
@@ -203,7 +202,7 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener {
                 playerX = 310;
                 score = 0;
                 totalBricks = 40;
-                map = new WallGenerator(5, 8);
+                map = new MapGenerator(5, 8);
 
                 repaint();
             }
