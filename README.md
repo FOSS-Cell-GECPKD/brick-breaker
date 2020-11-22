@@ -28,6 +28,8 @@
 
 **_Discussions about the brick-breaker takes place on Gitter Chat.The people interested are welcome to join chats on gitter._**
 
+
+
 **LICENSE**
 
-**_Licensed under the  MIT License._**
+**_Licensed under the  [MIT License](LICENSE)._**
