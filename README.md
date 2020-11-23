@@ -14,7 +14,7 @@
 
 **HOW TO GET ACCESS TO THIS GAME**
 
-**_You need jar file of brick-breaker game named brick_out ball and your system should support java.you can download or extract the jar file.After that,just double cloick the jar file and the game is ready to play._**
+**_You need jar file of brick-breaker game named brick_out ball and your system should support java.you can download or extract the jar file.After that,just double click the jar file and the game is ready to play._**
 
 **HOW T0 PLAY THIS GAME**
 
