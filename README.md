@@ -17,12 +17,10 @@ Below given is the link that can be used to clone the repo ,you can work on this
 
 git clone [https://github.com/FOSS-Cell-GECPKD/brick-breaker.git](https://github.com/FOSS-Cell-GECPKD/brick-breaker.git)
 
-## HOW TO GET ACCESS TO THIS GAME
+## HOW TO PLAY THIS GAME
 
 You need jar file of brick-breaker game named brick_out ball and your system should support java.you can download or extract the jar file.After that,just double click the jar file and the game is ready to play.
-
-## HOW T0 PLAY THIS GAME
-
+#### CONTROL
 Press left or right key to start the game .Move the paddle left and right to deflect the ball.Press enter to restart.
 
 ## CONTRIBUTING
