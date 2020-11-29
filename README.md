@@ -2,6 +2,11 @@
 
 [![Join the chat at https://gitter.im/FOSS-Cell-GECPKD/brick-breaker](https://badges.gitter.im/FOSS-Cell-GECPKD/brick-breaker.svg)](https://gitter.im/FOSS-Cell-GECPKD/brick-breaker?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+[![License](https://img.shields.io/github/license/FOSS-Cell-GECPKD/brick-breaker?style=for-the-badge)](https://github.com/FOSS-Cell-GECPKD/brick-breaker/blob/main/LICENSE)
+[![Issues](https://img.shields.io/github/issues/FOSS-Cell-GECPKD/brick-breaker?style=for-the-badge)](https://github.com/FOSS-Cell-GECPKD/brick-breaker/issues)
+
+<br/>![Netlify Status](https://api.netlify.com/api/v1/badges/c27123f8-e5b3-4471-95a5-1750162036f5/deploy-status)](https://brick-breaker.netlify.app/)
+
 **ABOUT**
 
 **_Brick breaker is a game in which the player must smash a wall of bricks by deflecting a bouncing ball with a paddle.When the player destroys all the bricks,he or she will win the game. The language used is java and we have three files the main class ,the gameplay class and a wall generator class. To build this game we used JFrame and Jpanel for drawing different graphics .In the game the player gets 40 bricks to smash and for each smash the player score 5 points_**
