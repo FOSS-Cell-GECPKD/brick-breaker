@@ -1,12 +1,10 @@
-# BRICK-BREAKER
-
 [![Join the chat at https://gitter.im/FOSS-Cell-GECPKD/brick-breaker](https://img.shields.io/badge/chat-on%20gitter-blue?style=for-the-badge)](https://gitter.im/FOSS-Cell-GECPKD/brick-breaker?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![License](https://img.shields.io/github/license/FOSS-Cell-GECPKD/brick-breaker?style=for-the-badge)](https://github.com/FOSS-Cell-GECPKD/brick-breaker/blob/main/LICENSE)
 [![Issues](https://img.shields.io/github/issues/FOSS-Cell-GECPKD/brick-breaker?style=for-the-badge)](https://github.com/FOSS-Cell-GECPKD/brick-breaker/issues)
 
 
 
-## ABOUT
+# Brick Breaker
 
 Brick breaker is a game in which the player must smash a wall of bricks by deflecting a bouncing ball with a paddle. When the player destroys all the bricks, he or she will win the game. The language used is java and we have three files the main class, the gameplay class and a wall generator class. To build this game we used JFrame and Jpanel for drawing different graphics. In the game the player gets 40 bricks to smash and for each smash the player score 5 points.
 
@@ -16,7 +14,7 @@ Brick breaker is a game in which the player must smash a wall of bricks by defle
 
 Make a local clone of this repo, so you can work on it from your own computer.
 ```
-git clone [https://github.com/FOSS-Cell-GECPKD/brick-breaker.git](https://github.com/FOSS-Cell-GECPKD/brick-breaker.git)
+git clone 
 ```
 ## HOW TO PLAY THIS GAME
 
@@ -39,7 +37,7 @@ If you don't see your idea/issue listed, do one of the following:
 
 ## COMMUNITY
 
-Discussions about Brick-Breaker takes place on Gitter Chat. Anyone is welcome to join these conversations.
+Discussions about Brick-Breaker take place on Gitter Chat. Anyone is welcome to join these conversations.
 
 ## LICENSE
 
