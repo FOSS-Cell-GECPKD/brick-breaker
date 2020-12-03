@@ -14,7 +14,7 @@ Brick breaker is a game in which the player must smash a wall of bricks by defle
 
 Make a local clone of this repo, so you can work on it from your own computer.
 ```
-git clone 
+git clone https://github.com/FOSS-Cell-GECPKD/brick-breaker.git
 ```
 ## HOW TO PLAY THIS GAME
 
