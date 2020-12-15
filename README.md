@@ -8,6 +8,8 @@
 
 Brick breaker is a game in which the player must smash a wall of bricks by deflecting a bouncing ball with a paddle. When the player destroys all the bricks, he or she will win the game. The language used is java and we have three files the main class, the gameplay class and a wall generator class. To build this game we used JFrame and Jpanel for drawing different graphics. In the game the player gets 40 bricks to smash and for each smash the player score 5 points.
 
+![Screenshot](https://raw.githubusercontent.com/FOSS-Cell-GECPKD/brick-breaker/main/demo.png)
+
 ## SETUP
 
 **Clone this repo!**
