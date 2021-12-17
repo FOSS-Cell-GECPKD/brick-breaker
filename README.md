@@ -44,3 +44,5 @@ Discussions about Brick-Breaker take place on Gitter Chat. Anyone is welcome to 
 ## LICENSE
 
 Licensed under the  [MIT License](LICENSE).
+
+This project was a part of FOSS OpenHack '20: https://openhack.gitbook.io/openhack-20/.
